@@ -51,26 +51,6 @@ class PinCollectionViewController: UICollectionViewController, UICollectionViewD
                 self.pinArray.append(pin)
             }
             
-            
-//            for var i = 0; i < pins?.count; i += 1 {
-//                var caption: String?
-//                var imageStr: String?
-//                
-//                if let item = pins![i] as? [String: AnyObject] {
-//                    let desc = item["description"] as? String
-//                    caption = "\(desc!)"
-//                    if let image = item["images"] as? [String: AnyObject] {
-//                        if let sizing = image["237x"] as? [String: AnyObject] {
-//                            let url = sizing["url"]!
-//                            imageStr = url as? String
-//                        }
-//                    }
-//                }
-//                
-//                let pin = Pin.init(caption: "\(caption!)", imageStr: "\(imageStr!)")
-//                self.pinArray.append(pin)
-//                
-//            }
             self.collectionView?.reloadData()
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             self.activityIndicator.stopAnimating()
