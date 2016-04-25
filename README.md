@@ -5,7 +5,9 @@ SMNetwork is a small helper library to help user download images from URL asynch
 Also, there is a sample project PinterestV2.xcodeproj included with the library
 
 ### Version
-1.0
+6/4/2016 - Version 1.0: Initial commit
+
+25/4/2016 - Version 1.1: Updated example project to use MVVM architecture
 
 ### Installation
 
