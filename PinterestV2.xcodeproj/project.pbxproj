@@ -15,6 +15,7 @@
 		23E0CE141CB4E9BD000EEFF2 /* PinCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0CE131CB4E9BD000EEFF2 /* PinCollectionViewController.swift */; };
 		23E0CE161CB4F339000EEFF2 /* SMNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0CE151CB4F339000EEFF2 /* SMNetwork.swift */; };
 		23E0CE191CB4F466000EEFF2 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0CE181CB4F466000EEFF2 /* Pin.swift */; };
+		23FFCDEE1CCCEF71003CCAC8 /* PinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FFCDED1CCCEF70003CCAC8 /* PinViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		23E0CE131CB4E9BD000EEFF2 /* PinCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCollectionViewController.swift; sourceTree = "<group>"; };
 		23E0CE151CB4F339000EEFF2 /* SMNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMNetwork.swift; path = SMNetwork/SMNetwork.swift; sourceTree = "<group>"; };
 		23E0CE181CB4F466000EEFF2 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		23FFCDED1CCCEF70003CCAC8 /* PinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				23E0CDFF1CB4E01A000EEFF2 /* AppDelegate.swift */,
 				23E0CE181CB4F466000EEFF2 /* Pin.swift */,
+				23FFCDED1CCCEF70003CCAC8 /* PinViewModel.swift */,
 				23E0CE131CB4E9BD000EEFF2 /* PinCollectionViewController.swift */,
 				23E0CE111CB4E97A000EEFF2 /* PinCollectionViewCell.swift */,
 				23E0CE031CB4E01A000EEFF2 /* Main.storyboard */,
@@ -154,6 +157,7 @@
 			files = (
 				23E0CE191CB4F466000EEFF2 /* Pin.swift in Sources */,
 				23E0CE161CB4F339000EEFF2 /* SMNetwork.swift in Sources */,
+				23FFCDEE1CCCEF71003CCAC8 /* PinViewModel.swift in Sources */,
 				23E0CE121CB4E97A000EEFF2 /* PinCollectionViewCell.swift in Sources */,
 				23E0CE141CB4E9BD000EEFF2 /* PinCollectionViewController.swift in Sources */,
 				23E0CE001CB4E01A000EEFF2 /* AppDelegate.swift in Sources */,
@@ -308,6 +312,7 @@
 				23E0CE101CB4E01A000EEFF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -89,10 +89,13 @@ class SMNetwork {
         let data: NSData? = self.cache.objectForKey(urlString) as? NSData
         
         if let goodData = data {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) {
+
             let image = UIImage(data: goodData)
             dispatch_async(dispatch_get_main_queue(), {() in
                 completionHandler(image: image, url: urlString)
             })
+                }
             return
         }
         
@@ -124,7 +127,6 @@ class SMNetwork {
         
 
     }
-    
 
     
     

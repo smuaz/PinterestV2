@@ -36,7 +36,7 @@ class PinCollectionViewController: UICollectionViewController, UICollectionViewD
                 var caption: String?
                 var imageStr: String?
                 
-                if let item = pins![i] as? [String: AnyObject] {
+                if let item = pins!.objectAtIndex(i) as? [String: AnyObject] {
                     let desc = item["description"] as? String
                     caption = "\(desc!)"
                     if let image = item["images"] as? [String: AnyObject] {
@@ -80,12 +80,8 @@ class PinCollectionViewController: UICollectionViewController, UICollectionViewD
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! PinCollectionViewCell
     
         let pin = self.pinArray[indexPath.row]
-        
-        SMNetwork.manager.downloadImage("\(pin.imageStr)", completionHandler:{(image: UIImage?, url: String) in
-            cell.pinImageView.image = image
-        })
-        
-        cell.pinLabel.text = "\(pin.caption)"
+        let viewModel = PinViewModel.init(pin)
+        cell.configure(withPresenter: viewModel)
         
         return cell
     }

@@ -47,11 +47,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="160" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKQ-7R-dFz">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PKQ-7R-dFz">
                                             <rect key="frame" x="8" y="8" width="144" height="204"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNQ-K0-wJ7">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNQ-K0-wJ7">
                                             <rect key="frame" x="8" y="224" width="144" height="68"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="68" id="Wsc-As-TWA"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -59,6 +62,17 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="PKQ-7R-dFz" firstAttribute="top" secondItem="mxn-so-R97" secondAttribute="top" constant="8" id="ETF-Sr-zKP"/>
+                                    <constraint firstItem="PKQ-7R-dFz" firstAttribute="leading" secondItem="mxn-so-R97" secondAttribute="leading" constant="8" id="TYw-BB-02E"/>
+                                    <constraint firstItem="vNQ-K0-wJ7" firstAttribute="leading" secondItem="mxn-so-R97" secondAttribute="leading" constant="8" id="W2X-Ne-r8I"/>
+                                    <constraint firstAttribute="trailing" secondItem="PKQ-7R-dFz" secondAttribute="trailing" constant="8" id="dtI-oP-98a"/>
+                                    <constraint firstItem="vNQ-K0-wJ7" firstAttribute="top" secondItem="PKQ-7R-dFz" secondAttribute="bottom" constant="12" id="gGH-zN-OvT"/>
+                                    <constraint firstAttribute="bottom" secondItem="vNQ-K0-wJ7" secondAttribute="bottom" constant="8" id="gtf-3V-htM"/>
+                                    <constraint firstAttribute="trailing" secondItem="vNQ-K0-wJ7" secondAttribute="trailing" constant="8" id="j06-kH-BDp"/>
+                                    <constraint firstItem="vNQ-K0-wJ7" firstAttribute="centerX" secondItem="mxn-so-R97" secondAttribute="centerX" id="kRh-I1-cGh"/>
+                                    <constraint firstItem="PKQ-7R-dFz" firstAttribute="centerX" secondItem="mxn-so-R97" secondAttribute="centerX" id="mUQ-Ru-j5p"/>
+                                </constraints>
                                 <size key="customSize" width="160" height="300"/>
                                 <connections>
                                     <outlet property="pinImageView" destination="PKQ-7R-dFz" id="3sk-cV-OBf"/>
